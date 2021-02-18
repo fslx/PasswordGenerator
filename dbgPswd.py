@@ -33,7 +33,7 @@ def generatePassword():
     
     for i in range(0, 30): # set this interval before running to have a set number of accounts created.
         print(random.choice(randValues)) 
-        file_Object = open(r"passwords.txt", "a") # unless this file exists the program will prompt an error message, possible flags to run open(a),open(x),open(r),open(w)
+        file_Object = open(r"passwords.txt", "a")
         file_Object.write(random.choice(randValues))   
 generateFile()
 
