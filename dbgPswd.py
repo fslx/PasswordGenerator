@@ -3,18 +3,11 @@ import time
 import string
 # source-code written by: https://github.com/fsty
 
-"""randChar = ["A", "B", "C", "D",
-            "E", "F", "G", "H", "I", "J",
-            "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
-            "U", "V", "W", "X", "Y", "Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"] - fixed w/ randValues.
-
-randNum = [] 
- 
-randSymbol = ["@", "$",
-                   "!", "+", "§"]"""
-
+# Global scope variable
 randValues = string.ascii_lowercase + string.ascii_uppercase + string.digits + "~@#$%^&*_" 
+
 def generateFile():
+            global randValues
             file_object_gen_yn = str(input(r"Do you wish to generate a new password.txt in your current working directory? y/n ")).lower()
             if file_object_gen_yn == "y":
                         print(r"created a new file in C/: ^ /Home/~ ")
