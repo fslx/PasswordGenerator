@@ -7,7 +7,7 @@ import string
 randValues = string.ascii_lowercase + string.ascii_uppercase + string.digits + "~@#$%^&*_" 
 
 def generateFile():
-            global randValues
+            global randValues # I noticed working on a OOP python 3.9 project, that my global scope variables would cause indentErrors when not specified as global in various functions.
             file_object_gen_yn = str(input(r"Do you wish to generate a new password.txt in your current working directory? y/n ")).lower()
             if file_object_gen_yn == "y":
                         print(r"created a new file in C/: ^ /Home/~ ")
