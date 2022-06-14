@@ -4,7 +4,7 @@ import string
 # source-code written by: https://github.com/fsty
 
 # Global scope variable
-randValues = string.ascii_lowercase + string.ascii_uppercase + string.digits + "~@#$%^&*_" 
+GLOBAL randValues = string.ascii_lowercase + string.ascii_uppercase + string.digits + "~@#$%^&*_" 
 
 def generateFile():
             global randValues # I noticed working on a OOP python 3.9 project, that my global scope variables would cause indentErrors when not specified as global in various functions.
